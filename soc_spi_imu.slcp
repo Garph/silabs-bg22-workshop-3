@@ -22,6 +22,7 @@ component:
 - instance: [vcom]
   id: iostream_usart
 - {id: mpu}
+- {id: gatt_service_imu}
 - {id: component_catalog}
 - {id: ota_dfu}
 - {id: brd4184a}

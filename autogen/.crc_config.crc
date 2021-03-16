@@ -1,7 +1,7 @@
 #CRC Codes for initially generated config files -- do not modify!
-#Tue Mar 16 10:17:04 CDT 2021
-sl_bluetooth_config.h=-1605786923
+#Tue Mar 16 10:17:41 CDT 2021
 nvm3_default_config.h=-1865878923
+sl_bluetooth_config.h=-1605786923
 sl_hfxo_manager_config.h=518269156
 sl_device_init_lfrco_config.h=-1175914260
 sl_device_init_lfxo_config.h=-1975987421
@@ -14,8 +14,10 @@ btconf/ota_dfu.xml=-856428549
 sl_rail_util_pti_config.h=1414306924
 btconf/gatt_configuration.btconf=1170408657
 sl_mx25_flash_shutdown_usart_config.h=-283962480
+btconf/gatt_service_imu.xml=1768776454
 sl_app_assert_config.h=1294668113
 sl_device_init_hfxo_config.h=101953940
+sl_app_log_config.h=-1573307542
 sl_board_control_config.h=-436878843
 sl_power_manager_config.h=765860105
 sl_memory_config.h=1136720201

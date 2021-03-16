@@ -14,6 +14,7 @@
 #include "sl_rail_util_pti.h"
 #include "sl_sleeptimer.h"
 #include "sl_bluetooth.h"
+#include "sl_gatt_service_imu.h"
 #include "sl_iostream_init_instances.h"
 #include "sl_iostream_init_usart_instances.h"
 #include "sl_mbedtls.h"
@@ -84,5 +85,6 @@ void sl_stack_process_action(void)
 
 void sl_internal_app_process_action(void)
 {
+  sl_gatt_service_imu_step();
 }
 

@@ -12,6 +12,7 @@ const struct bg_gattdb_def bg_gattdb_data = {0};
 #endif // SL_CATALOG_GATT_CONFIGURATION_PRESENT
 #endif // SL_COMPONENT_CATALOG_PRESENT
 #include "sl_ota_dfu.h"
+#include "sl_gatt_service_imu.h"
 
 static const sl_bt_configuration_t config = SL_BT_CONFIG_DEFAULT;
 
@@ -42,6 +43,7 @@ SL_WEAK void sl_bt_on_event(sl_bt_msg_t* evt)
 void sl_bt_process_event(sl_bt_msg_t *evt)
 {
   sl_bt_ota_dfu_on_event(evt);
+  sl_gatt_service_imu_on_event(evt);
   sl_bt_on_event(evt);
 }
 

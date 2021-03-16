@@ -631,6 +631,16 @@
             </folder>
           </folder>
         </folder>
+        <folder name="printf">
+          <folder name="src">
+            <file name="iostream_printf.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/util/third_party/printf/src/iostream_printf.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="iostream_printf.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/util/third_party/printf/inc/iostream_printf.h"/>
+          </folder>
+          <file name="printf.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/util/third_party/printf/printf.c"/>
+          <file name="printf.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/util/third_party/printf/printf.h"/>
+        </folder>
       </folder>
       <folder name="silicon_labs">
         <folder name="silabs_core">
@@ -671,6 +681,13 @@
     <folder name="app">
       <folder name="bluetooth">
         <folder name="common">
+          <folder name="app_log">
+            <file name="sl_app_log.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/app_log/sl_app_log.h"/>
+          </folder>
+          <folder name="gatt_service_imu">
+            <file name="sl_gatt_service_imu.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.c"/>
+            <file name="sl_gatt_service_imu.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/gatt_service_imu/sl_gatt_service_imu.h"/>
+          </folder>
           <folder name="app_assert">
             <file name="sl_app_assert.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/app_assert/sl_app_assert.h"/>
           </folder>
@@ -710,6 +727,7 @@
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/emdrv/common/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/hardware/board/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/service/ram_interrupt_vector_init/inc"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/app/bluetooth/common/app_log"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/crypto/sl_component/se_manager/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/crypto/sl_component/se_manager/src"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/radio/rail_lib/common"/>
@@ -720,6 +738,9 @@
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/radio/rail_lib/chip/efr32/efr32xg2x"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/crypto/sl_component/sl_alt/include"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/crypto/sl_component/sl_mbedtls_support/inc"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/printf"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/util/third_party/printf/inc"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/app/bluetooth/common/gatt_service_imu"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/app/bluetooth/common/app_assert"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/service/sleeptimer/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/service/mpu/inc"/>
