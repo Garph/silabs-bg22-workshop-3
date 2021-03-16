@@ -19,6 +19,8 @@ source:
 project_name: soc_spi_imu
 quality: production
 component:
+- instance: [vcom]
+  id: iostream_usart
 - {id: mpu}
 - {id: component_catalog}
 - {id: ota_dfu}
@@ -39,7 +41,6 @@ other_file:
 tag: ['hardware:rf:band:2400']
 category: Bluetooth Examples
 toolchain_settings: []
-config_file: []
 ui_hints:
   highlight:
   - {path: readme.html, focus: true}

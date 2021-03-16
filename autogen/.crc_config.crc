@@ -1,7 +1,7 @@
 #CRC Codes for initially generated config files -- do not modify!
-#Tue Mar 16 10:15:25 CDT 2021
-nvm3_default_config.h=-1865878923
+#Tue Mar 16 10:17:04 CDT 2021
 sl_bluetooth_config.h=-1605786923
+nvm3_default_config.h=-1865878923
 sl_hfxo_manager_config.h=518269156
 sl_device_init_lfrco_config.h=-1175914260
 sl_device_init_lfxo_config.h=-1975987421
@@ -19,3 +19,4 @@ sl_device_init_hfxo_config.h=101953940
 sl_board_control_config.h=-436878843
 sl_power_manager_config.h=765860105
 sl_memory_config.h=1136720201
+sl_iostream_usart_vcom_config.h=-863789426

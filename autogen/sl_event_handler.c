@@ -14,11 +14,18 @@
 #include "sl_rail_util_pti.h"
 #include "sl_sleeptimer.h"
 #include "sl_bluetooth.h"
+#include "sl_iostream_init_instances.h"
+#include "sl_iostream_init_usart_instances.h"
 #include "sl_mbedtls.h"
 #include "sl_mpu.h"
 #include "nvm3_default.h"
 #include "sl_ram_interrupt_vector_init.h"
 #include "sl_power_manager.h"
+
+void sl_iostream_init_instances(void)
+{
+  sl_iostream_usart_init_instances();
+}
 
 void sl_platform_init(void)
 {
@@ -46,6 +53,7 @@ void sl_service_init(void)
 {
   sl_sleeptimer_init();
   sl_hfxo_manager_init();
+  sl_iostream_init_instances();
   sl_mbedtls_init();
   sl_mpu_disable_execute_from_ram();
 }
