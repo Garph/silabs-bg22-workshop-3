@@ -19,7 +19,7 @@
 #include "sl_bluetooth.h"
 #include "gatt_db.h"
 #include "app.h"
-
+#include "sl_sensor_imu.h"
 // The advertising set handle allocated from Bluetooth stack.
 static uint8_t advertising_set_handle = 0xff;
 
@@ -32,6 +32,25 @@ SL_WEAK void app_init(void)
   // Put your additional application init code here!                         //
   // This is called once during start-up.                                    //
   /////////////////////////////////////////////////////////////////////////////
+}
+
+/* place 1, code added for accelerometer workshop */
+static void sensor_init(void)
+{
+  sl_sensor_imu_init();
+  sl_sensor_imu_enable(true);
+}
+
+/* place 2, code added for accelerometer workshop */
+static void sensor_deinit(void)
+{
+  sl_sensor_imu_deinit();
+}
+
+/* place 3, code added for accelerometer workshop */
+sl_status_t sl_gatt_service_imu_get(int16_t ovec[3], int16_t avec[3])
+{
+  return sl_sensor_imu_get(ovec, avec);
 }
 
 /**************************************************************************//**
@@ -118,6 +137,8 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
     // -------------------------------
     // This event indicates that a new connection was opened.
     case sl_bt_evt_connection_opened_id:
+      /* place 4, code added for accelerometer workshop */
+      sensor_init();
       break;
 
     // -------------------------------
@@ -129,8 +150,10 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
         advertiser_general_discoverable,
         advertiser_connectable_scannable);
       sl_app_assert(sc == SL_STATUS_OK,
-                    "[E: 0x%04x] Failed to start advertising\n",
-                    (int)sc);
+        "[E: 0x%04x] Failed to start advertising\n",
+        (int)sc);
+      /* place 5, code added for accelerometer workshop */
+      sensor_deinit();
       break;
 
     ///////////////////////////////////////////////////////////////////////////
