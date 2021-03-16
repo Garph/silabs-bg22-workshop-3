@@ -344,6 +344,25 @@
             </folder>
           </folder>
         </folder>
+        <folder name="icm20648">
+          <folder name="src">
+            <file name="sl_icm20648.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/icm20648/src/sl_icm20648.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_icm20648.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/icm20648/inc/sl_icm20648.h"/>
+          </folder>
+        </folder>
+        <folder name="imu">
+          <folder name="src">
+            <file name="sl_imu.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/imu/src/sl_imu.c"/>
+            <file name="sl_imu_dcm.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/imu/src/sl_imu_dcm.c"/>
+            <file name="sl_imu_fuse.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/imu/src/sl_imu_fuse.c"/>
+            <file name="sl_imu_math.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/imu/src/sl_imu_math.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_imu.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/hardware/driver/imu/inc/sl_imu.h"/>
+          </folder>
+        </folder>
       </folder>
       <folder name="board">
         <folder name="src">
@@ -691,6 +710,10 @@
           <folder name="app_assert">
             <file name="sl_app_assert.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/app_assert/sl_app_assert.h"/>
           </folder>
+          <folder name="sensor_imu">
+            <file name="sl_sensor_imu.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/sensor_imu/sl_sensor_imu.c"/>
+            <file name="sl_sensor_imu.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/sensor_imu/sl_sensor_imu.h"/>
+          </folder>
           <folder name="ota_dfu">
             <file name="sl_ota_dfu.c" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/ota_dfu/sl_ota_dfu.c"/>
             <file name="sl_ota_dfu.h" linked="false" uri="file:///home/matt/Software/SimplicityStudio-5/SimplicityStudio_v5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/ota_dfu/sl_ota_dfu.h"/>
@@ -750,6 +773,8 @@
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/service/udelay/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/service/power_manager/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/util/silicon_labs/silabs_core/memory_manager"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/app/bluetooth/common/sensor_imu"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/hardware/driver/icm20648/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/radio/rail_lib/plugin/pa-conversions"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/radio/rail_lib/plugin/pa-conversions/efr32xg22"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/app/bluetooth/common/ota_dfu"/>
@@ -758,6 +783,7 @@
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/bootloader"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/bootloader/api"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/CMSIS/Include"/>
+  <includePath uri="studio:/project/gecko_sdk_3.1.1/hardware/driver/imu/inc"/>
   <includePath uri="studio:/project/gecko_sdk_3.1.1/platform/Device/SiliconLabs/EFR32BG22/Include"/>
   <macroDefinition name="SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT" value="0"/>
   <macroDefinition name="SL_COMPONENT_CATALOG_PRESENT"/>

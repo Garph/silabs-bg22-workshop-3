@@ -1,11 +1,12 @@
 #CRC Codes for initially generated config files -- do not modify!
-#Tue Mar 16 10:17:41 CDT 2021
+#Tue Mar 16 10:18:23 CDT 2021
 nvm3_default_config.h=-1865878923
 sl_bluetooth_config.h=-1605786923
 sl_hfxo_manager_config.h=518269156
 sl_device_init_lfrco_config.h=-1175914260
 sl_device_init_lfxo_config.h=-1975987421
 mbedtls_config.h=-479277729
+sl_icm20648_config.h=1430212522
 sl_sleeptimer_config.h=-1074849105
 sl_device_init_dcdc_config.h=540536968
 sl_device_init_emu_config.h=1238190016
